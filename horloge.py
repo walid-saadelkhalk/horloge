@@ -1,5 +1,5 @@
 import time
-from alarme import alarme
+from alarme import alarme, pause
 
 def afficher_heure():
     debut_h = int(input("Heure de départ (00-23) : "))
@@ -50,7 +50,9 @@ def afficher_heure():
                         
                         if am_pm == "PM":
                             continue
-                        alarme(defilement_liste)            
+                        alarme(defilement_liste)     
+                        pause(defilement_liste)
+
             
                     
 afficher_heure()
